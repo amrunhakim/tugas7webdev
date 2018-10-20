@@ -53,36 +53,7 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 							<div class="blog_text text-center"><?php echo $result['tittle'] ?></div>
 							<div class="blog_button"><a href='blog_single.php?id=<?php echo $result['id'] ?>'>Continue Reading</a></div>
 						</div>
-					 <?php endforeach; ?>
-
-						
-						<!-- <div class="blog_post">
-							<div class="blog_image" style="background-image:url(images/blog_2.jpg)"></div>
-							<div class="blog_text">Cras lobortis nisl nec libero pulvinar lacinia. Nunc sed ullamcorper massa.</div>
-							<div class="blog_button"><a href="blog_single.html">Continue Reading</a></div>
-						</div>
-						
-						<div class="blog_post">
-							<div class="blog_image" style="background-image:url(images/blog_3.jpg)"></div>
-							<div class="blog_text">Fusce tincidunt nulla magna, ac euismod quam viverra id. Fusce eget metus feugiat</div>
-							<div class="blog_button"><a href="blog_single.html">Continue Reading</a></div>
-						</div>
-
-						
-						<div class="blog_post">
-							<div class="blog_image" style="background-image:url(images/blog_4.jpg)"></div>
-							<div class="blog_text">Etiam leo nibh, consectetur nec orci et, tempus tempus ex</div>
-							<div class="blog_button"><a href="blog_single.html">Continue Reading</a></div>
-						</div>
-
-											
-
-						
-						<div class="blog_post">
-							<div class="blog_image" style="background-image:url(images/blog_9.jpg)"></div>
-							<div class="blog_text">4 Steps to Getting Anything You Want In Life</div>
-							<div class="blog_button"><a href="blog_single.html">Continue Reading</a></div>
-						</div> -->
+					 <?php endforeach; ?>				
 						
 					</div>
 				</div>
@@ -104,7 +75,7 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 							<div class="newsletter_text"><p>...Pencarian di blog berdasarkan kata judul artikel...</p></div>
 						</div>
 						<div class="newsletter_content clearfix">
-							<form class="form-inline" action="#"> 
+							<form class="form-inline" action="search_blog.php"> 
                                 <!-- search_blog.php -->
 								<input type="text" class="newsletter_input" name="keyword" placeholder="Masukkan kata yang ingin dicari...">
 								<button class="newsletter_button" type="submit">Cari</button>
